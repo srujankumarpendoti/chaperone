@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer-text {
+  @apply text-xs leading-3  md:text-sm text-[#838383] max-lg:text-wrap;
+}
