@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="w-full px-8 md:px-24 pb-12">
+      <div className="w-full px-8 md:px-12 lg:px-24 pb-12">
         <div className=" flex justify-center items-center mb-12">
           <div className=" m-4 flex items-center border-b border-black">
             <IoSearchOutline className="w-6 mr-2 text-black" />

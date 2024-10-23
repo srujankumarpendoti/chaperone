@@ -6,14 +6,14 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <section className="bg-[#F0FFE5] w-full p-12 ">
-      <div className="w-full flex flex-col md:flex-row justify-between  gap-4 md:gap-2">
-        <div className="w-full md:w-3/12 flex flex-col items-start max-md:gap-0 ">
+    <section className="bg-[#F0FFE5] w-full p-8 md:p-12 ">
+      <div className="w-full grid grid-cols-1 md:grid-cols-6 gap-3">
+        <div className="w-full col-span-2 md:col-span-1 flex flex-col ">
           <h2 className="font-medium text-lg md:text-2xl mb-4">
             SUBSCRIBE TO OUR NEWSLETTER
           </h2>
-          <div className="gap-1 md:gap-3 flex flex-col items-start">
-            <p className="footer-text">
+          <div className="gap-3 flex flex-col items-start">
+            <p className="footer-text ">
               Lorem ipsum dolor sit amet. Aut ipsam illum et nostrum quidem aut
               necesbus enim
             </p>
@@ -27,8 +27,8 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-wrap justify-between  gap-4 md:gap-2">
-          <div className="max-md:w-2/5 flex flex-col ">
+        <div className="w-full md:col-span-5 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-1">
+          <div className="w-full flex flex-col ">
             <h2 className="font-medium text-sm md:text-2xl mb-2 md:mb-4">
               ABOUT US
             </h2>
@@ -40,7 +40,7 @@ const Footer = () => {
               <a className="footer-text">Help & Support</a>
             </div>
           </div>
-          <div className="max-md:w-2/5 flex flex-col ">
+          <div className=" flex flex-col ">
             <h2 className="font-medium text-sm md:text-2xl mb-2 md:mb-4">
               OUR SERVICES
             </h2>
@@ -52,7 +52,7 @@ const Footer = () => {
               <a className="footer-text">Gardening Tools</a>
             </div>
           </div>
-          <div className="max-md:w-2/5 flex flex-col ">
+          <div className="flex flex-col ">
             <h2 className="font-medium text-sm md:text-2xl mb-2 md:mb-4">
               USEFUL LINKS
             </h2>
@@ -65,7 +65,7 @@ const Footer = () => {
               <a className="footer-text">Return, Refund & Replacement Policy</a>
             </div>
           </div>
-          <div className="max-md:w-2/5 md:w-1/6 flex flex-col ">
+          <div className="flex flex-col ">
             <h2 className="font-medium text-sm md:text-2xl mb-2 md:mb-4">
               GET IN TOUCH
             </h2>
@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="max-md:block">
+      <div className="">
         <div className="my-4">
           <h2 className="font-medium text-lg md:text-2xl my-2">CHAPERONE</h2>
           <p className="text-xs md:text-base text-[#838383]">

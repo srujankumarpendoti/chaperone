@@ -27,8 +27,8 @@ const Products = () => {
   }
 
   return (
-    <section className="w-full flex justify-between gap-6 md:gap-12">
-      <div className=" hidden md:block min-w-64   p-4 bg-[#F0FFE5] text-[#6E6E6E] text-base h-min">
+    <section className="w-full grid grid-cols-4 gap-8">
+      <div className="hidden md:block col-span-1 p-4 bg-[#F0FFE5] text-[#6E6E6E] text-base h-min">
         <div className="flex justify-between items-center border-b pb-4">
           <p className="w-">Filter</p>
           <button className="">CLEAR ALL</button>
@@ -46,8 +46,8 @@ const Products = () => {
         </ul>
       </div>
 
-      <div className="bg-white w-full">
-        <div className="flex items-center gap-10 ">
+      <div className="col-span-4 md:col-span-3 bg-white w-full">
+        <div className="w-full flex items-center gap-10 ">
           <h2 className="text-[#6A6A6A] text-sm font-normal">
             {productsList.length} products
           </h2>
@@ -59,13 +59,13 @@ const Products = () => {
           </div>
         </div>
 
-        <div className="flex justify-between md:justify-start flex-wrap flex-auto  md:gap-8 my-10">
+        <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-3 lg:grid-cols-4 my-10">
           {currentProductItems.map((product, index) => (
             <ProductItem key={index + 1} product={product} />
           ))}
         </div>
-        <Pagination pageNumbers={pageNumbers} setPage={setPage} page={page} />
       </div>
+      <Pagination pageNumbers={pageNumbers} setPage={setPage} page={page} />
     </section>
   );
 };

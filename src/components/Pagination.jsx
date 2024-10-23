@@ -12,7 +12,7 @@ const Pagination = ({ pageNumbers, setPage, page }) => {
   const nextBtnclass = page === maxPage ? "bg-gray-500" : "bg-[#144D14] ";
 
   return (
-    <div className="w-full flex justify-center items-center gap-2">
+    <div className="w-full col-span-4 flex justify-center items-center gap-2">
       <button
         disabled={page === 1}
         onClick={handlePrevPage}
